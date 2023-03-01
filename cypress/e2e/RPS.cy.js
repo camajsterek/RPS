@@ -44,7 +44,7 @@ describe("RPS Game", () => {
 				cy.get("#Result").should("contain", "wins");
 				//computer chooses rock
 			} else if ($option.text().includes("Computer chose Rock")) {
-				//should be win
+				//should be loss
 				cy.get("#Result").should("contain", "loses");
 			}
 		});
